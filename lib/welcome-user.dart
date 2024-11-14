@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,  // Center-aligns content horizontally
                     children: [
                       const Text(
-                        'Welcome, Admin!',
+                        'Welcome, User!',
                         style: TextStyle(
                           fontFamily: 'Lexend',
                           color: Colors.black,
@@ -90,10 +90,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-
-
-
-
 
               const SizedBox(height: 40.0),
 
@@ -131,54 +127,6 @@ class _LoginPageState extends State<LoginPage> {
                               fontSize: 18.0,
                               color: Colors.white,
                               fontWeight: FontWeight.w700,  // Semi-bold weight
-
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: 20.0),
-                    ElevatedButton(
-                      onPressed: () {
-                        debugPrint('Create Recipes Button Pressed!');
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.red.shade300,
-                        padding: const EdgeInsets.symmetric(horizontal: 65, vertical: 15),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        elevation: 5,
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              Icon(
-                                Icons.add,
-                                color: Colors.white.withOpacity(0.9),
-                                size: 24,
-                              ),
-                              Positioned(
-                                left: 1.0,  // Slight horizontal offset for thicker effect
-                                child: Icon(
-                                  Icons.add,
-                                  color: Colors.white,
-                                  size: 24,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(width: 8),
-                          const Text(
-                            'Create Recipes',
-                            style: TextStyle(
-                              fontFamily: 'Lexend',
-                              fontSize: 18.0,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w700,  // Semi-bold weight
                             ),
                           ),
                         ],
@@ -187,6 +135,7 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               ),
+
 
               const SizedBox(height: 20.0),
 
@@ -213,11 +162,7 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               ),
-
-
-
             ],
-
           ),
         ),
       ),
