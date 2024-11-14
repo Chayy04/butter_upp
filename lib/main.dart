@@ -71,33 +71,23 @@ class _LoginPageState extends State<LoginPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Username',
+                      'Welcome, Admin!',
                       style: TextStyle(
                         fontFamily: 'Lexend',
                         color: Colors.black,
-                        fontSize: 30.0,
+                        fontSize: 35.0,
                       ),
                     ),
                     SizedBox(height: 10.0),
-                    TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Enter Username',
-                        hintStyle: TextStyle(
-                          fontFamily: 'Lexend',
-                          color: Colors.grey,
-                        ),
-                        border: InputBorder.none,
-                      ),
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    ),
-                    Divider(
-                      color: Colors.black,
-                      thickness: 3.0,
-                      height: 20,
-                    ),
                   ],
+                ),
+              ),
+              Container(
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('images/pastry_chef.png'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
 
@@ -118,25 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(height: 10.0),
-                    TextField(
-                      obscureText: true,
-                      decoration: InputDecoration(
-                        hintText: 'Enter Password',
-                        hintStyle: TextStyle(
-                          fontFamily: 'Lexend',
-                          color: Colors.grey,
-                        ),
-                        border: InputBorder.none,
-                      ),
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    ),
-                    Divider(
-                      color: Colors.black,
-                      thickness: 3.0,
-                      height: 20,
-                    ),
+
                   ],
                 ),
               ),
