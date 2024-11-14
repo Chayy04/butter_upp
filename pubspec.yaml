@@ -62,7 +62,8 @@ flutter:
   assets:
     - images/bg.png
     - images/woodroll.png
-    - pastry_chef.png
+    - images/pastry_chef.png
+    - images/cakeicon.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
