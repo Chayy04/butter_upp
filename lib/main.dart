@@ -1,33 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'package:butter_upp/signup_page.dart';
+import 'background_widget.dart';// Import SignUpPage
+
+
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.red.shade300,
   ));
 
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
       body: Stack(
         children: [
-          // Background Image
-          Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('images/bg.png'),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          // Foreground (e.g., your LoginPage)
-          const LoginPage(),
+          // Reuse the BackgroundWidget from the widget folder
+          BackgroundWidget(),
+          // Foreground (LoginPage or your SignUpPage)
+          LoginPage(),
         ],
       ),
     ),
   ));
 }
 
+//Login Page
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -185,7 +183,13 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        debugPrint('Sign up tapped!');
+                        // Navigate to the SignUpPage when 'Sign up' is tapped
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUpPage(),
+                          ),
+                        );
                       },
                       child: Text(
                         'Sign up',
