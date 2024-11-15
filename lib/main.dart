@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'package:butter_upp/signup_page.dart';
 import 'background_widget.dart';// Import SignUpPage
+import 'home_page.dart';
 import 'welcome_admin_page.dart'; // Adjust the import path if necessary
 
 
@@ -18,9 +19,9 @@ void main() {
       body: Stack(
         children: [
           // Reuse the BackgroundWidget from the widget folder
-          BackgroundWidget(),
+          home_background(),
           // Foreground (LoginPage or your SignUpPage)
-          LoginPage(),
+          Homepage(),
         ],
       ),
     ),

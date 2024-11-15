@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class home_background extends StatelessWidget {
-  const home_background({super.key});
+class Homebackground extends StatelessWidget {
+  const Homebackground({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('images/bg.png'),
+          image: AssetImage('images/Home.png'),
           fit: BoxFit.cover,
         ),
       ),

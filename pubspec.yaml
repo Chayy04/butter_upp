@@ -64,6 +64,12 @@ flutter:
     - images/cakeicon.png
     - images/pastry_chef.png
     - images/woodroll.png
+    - images/Home.png
+    - images/white.png
+    - images/clock.png
+    - images/pencil.png
+    - images/user.png
+    - images/heart.png
 
   #   - images/a_dot_ham.jpeg
 

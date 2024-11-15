@@ -17,7 +17,7 @@ class _SignUpPageState extends State<SignUpPage> {
       body: Stack(
         children: [
           // Reuse the BackgroundWidget from the widget folder
-          const BackgroundWidget(),
+          const home_background(),
           // Your SignUpPage content
           SafeArea(
             child: SingleChildScrollView(
