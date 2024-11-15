@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 
 import 'package:butter_upp/signup_page.dart';
 import 'background_widget.dart';// Import SignUpPage
+import 'welcome_admin_page.dart'; // Adjust the import path if necessary
+
 
 
 void main() {
@@ -141,11 +143,14 @@ class _LoginPageState extends State<LoginPage> {
 
               const SizedBox(height: 40.0),
 
-              // Centered Button
+              // Login Button
               Center(
                 child: ElevatedButton(
                   onPressed: () {
-                    debugPrint('Login Button Pressed!');
+                    var login_button = Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const WelcomeAdminPage()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red.shade300,
